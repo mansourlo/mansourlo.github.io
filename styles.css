@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --color1: #4DBFFF;
+    --color2: #fff;
+    --paragraphColor: #ccc;
+}
+
+.logo{
+    user-select: none;
+    font-size:larger;
+    letter-spacing: 1px;
+    padding-left: 1rem;
+}
+
+.sante{
+    color: var(--color1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 0;
+    color: var(--color2);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background: rgba(10, 37, 64, 0.9); /* #0A2540 avec 90% d'opacité */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid #2B5A7D;
+    z-index: 1000;
+} 
+
+.nav-bar a{
+    color: var(--color2);
+    text-decoration: none;
+    font-size: medium;
+    margin-left: 30px;
+}
+.nav-bar a:hover{
+    color: var(--color1);
+}
+.nav-bar a:focus{
+    text-decoration: underline;
+    color: var(--color1);
+}
+
+.nav-bar a:last-of-type{
+    background: var(--color1);
+    color: #0A2540;
+    padding: 0.5rem .5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+section{
+    width: 100vw; height: 100vh; color: var(--color2);
+}
+
+    /* ? Section Accueil */ 
+section#home{
+    text-align: center; color: var(--color2);
+    background: linear-gradient(to right, #0A2540, #0E3555);
+}
+.self  {
+    width: 250px;
+    height: 250px;
+    border: 2px solid var(--color1);
+    border-radius: 50%;
+    box-shadow:  var(--color1);
+    margin-top: 7em;
+}
+section#home h1{
+    font-size: 3em;
+}
+section#home p{
+    color: var(--paragraphColor);
+    font-size: large;
+}
+.socials i{
+    color: var(--color2);
+    margin: 30px 10px;
+    font-size: 1em;
+}
+.socials i:hover{
+    color: var(--color1);
+    transform: scale(1.2, 1.2);
+}
+
+    /* ? Section A propos */
+section#about{
+    background: #0A2540;
+}
+section#about h1{
+    text-align: center; padding-top: 2.5em ;
+}
+section#about h1 + p{
+    text-align: center; color: var(--paragraphColor); 
+}
+.bio{
+    color: var(--paragraphColor);
+}
+.carte-contact{
+    background: #0F3A5F; border: 1px solid #2B5A7D;
+}
+button{
+    background: #4DBFFF; width: 90%; border: none; border-radius: 10px;
+    margin: 10px 10px 20px 25px; padding: 20px; text-align: center;
+}
+button > a{
+    text-decoration: none; color: #0A2540;font-weight:bold;
+}
