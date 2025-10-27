@@ -64,13 +64,14 @@ header {
 }
 
 section{
-    width: 100vw; height: 100vh; color: var(--color2);
+    width: 100%; height: 100%; color: var(--color2); margin: 0;
 }
 
     /* ? Section Accueil */ 
 section#home{
     text-align: center; color: var(--color2);
     background: linear-gradient(to right, #0A2540, #0E3555);
+    height: 100vh;
 }
 .self  {
     width: 250px;
