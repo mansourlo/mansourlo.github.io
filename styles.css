@@ -94,7 +94,7 @@ section#home p{
 }
 .socials i{
     color: var(--color2);
-    margin: 30px 10px;
+    margin: 30px 10px ;
     font-size: 1em;
 }
 .socials i:hover{
@@ -104,24 +104,52 @@ section#home p{
 
     /* ? Section A propos */
 section#about{
-    background: #0A2540;
+    background: #0A2540; padding: 2.5em 0;
 }
 section#about h1{
-    text-align: center; padding-top: 2.5em ;
+    text-align: center; margin-bottom: 0;
 }
 section#about h1 + p{
-    text-align: center; color: var(--paragraphColor); 
+    text-align: center; color: var(--paragraphColor);
 }
 .bio{
     color: var(--paragraphColor);
 }
+
+p button{
+    background: #4DBFFF; border: none; border-radius: 5px;
+}
+button:has(a){
+    background: #4DBFFF; width:100%; border: none; border-radius: 10px;
+    padding: 10px; margin-left: 10px;
+}
+button > a, button > i{
+    text-decoration: none; color: #0F3A5F;font-weight:bold; padding: 5px;
+}
+section#about button:hover{
+    opacity: 0.9;
+}
+
+.infos-persos{
+    margin: 15px; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 30px;
+}
+.history{
+    display: flex; flex-direction: column;
+}
 .carte-contact{
-    background: #0F3A5F; border: 1px solid #2B5A7D;
+    background: #0F3A5F; border: 1px solid #2B5A7D; border-radius: 10px;
+    padding: 20px;
+
 }
-button{
-    background: #4DBFFF; width: 90%; border: none; border-radius: 10px;
-    margin: 10px 10px 20px 25px; padding: 20px; text-align: center;
+table i{
+    background: rgba(77, 191, 255, 0.1); color: var(--color1); font-size: 22px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 5px;
 }
-button > a{
-    text-decoration: none; color: #0A2540;font-weight:bold;
+.label{
+    color: var(--paragraphColor);font-size: small;
 }
