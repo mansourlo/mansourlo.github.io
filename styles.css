@@ -166,11 +166,10 @@ section#project h1 + p{
 }
 
 .project-container{
-    margin: 15px;
+    margin: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0 30px;
-
 }
 .carte-projet{
     background-color: #0A2540;
@@ -210,3 +209,41 @@ section#project h1 + p{
 .github-btn *:hover{
     color: #0A2540;
 }
+
+/* ? Section Competences*/
+section#skill{
+    background-color: #0A2540; padding: 3.5em 0;
+}
+section#skill h1, .others-skill h2{
+    text-align: center;
+}
+section#skill h1 + p{
+    text-align: center; color: var(--paragraphColor); margin-bottom: 30px;
+}
+
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); gap: 0 30px; margin: 20px;
+}
+.skill-card{
+    background-color: #0A2540;
+    width: 30vw;
+    border: 1px solid #2B5A7D; border-radius: 20px;
+    overflow: hidden;
+}
+.skill-card h2, .skill-card div{
+    margin: 10px;
+}
+h2 i{
+    background: rgba(77, 191, 255, 0.1); color: var(--color1); font-size: 22px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 5px;
+}
+.skill-name{
+    display: flex; justify-content: space-between;
+}
+.progress {
+    margin: 20px 0;
+}
+progress{display: inline-block; position: relative; left: 15px; width: 90%; margin-top: 0; }
