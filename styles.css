@@ -232,7 +232,7 @@ section#skill h1 + p{
     overflow: hidden;
 }
 .skill-card h2, .skill-card div{
-    margin: 10px;
+    margin: 10px; font-size: large
 }
 h2 i{
     background: rgba(77, 191, 255, 0.1); color: var(--color1); font-size: 22px;
@@ -241,12 +241,12 @@ h2 i{
     margin: 10px 5px;
 }
 .skill-name{
-    display: flex; justify-content: space-between;
+    display: flex; justify-content: space-between; font-size: medium !important;
 }
 .progress {
     margin: 20px 0;
 }
-progress{display: inline-block; position: relative; left: 15px; width: 90%; margin: 0; appearance: none; 
+progress{display: inline-block; position: relative; left: 15px; width: 90%; margin: 5px 0 7px 0; appearance: none; 
     -webkit-appearance: none;
     -moz-appearance: none;
     overflow: hidden; border-radius: 20px; height: 10px;
@@ -256,3 +256,8 @@ progress{display: inline-block; position: relative; left: 15px; width: 90%; marg
 progress::-webkit-progress-bar { background:#0A2540; }
 progress::-webkit-progress-value { background-color: var(--color1); border-radius: 20px; }
 progress::-moz-progress-bar { background-color: #0E3555; }
+/* !other skills*/
+.others-container{display: flex; justify-content: center; gap: 20px;}
+.others{
+    background-color: var(--color1); color: #0A2540; opacity: 0.7 ;border-radius: 20px; padding: 7px;
+}
