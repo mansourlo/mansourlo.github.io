@@ -259,5 +259,8 @@ progress::-moz-progress-bar { background-color: #0E3555; }
 /* !other skills*/
 .others-container{display: flex; justify-content: center; gap: 20px;}
 .others{
-    background-color: var(--color1); color: #0A2540; opacity: 0.7 ;border-radius: 20px; padding: 7px;
+     color: var(--color1); border: 1px solid var(--color1) ;border-radius: 20px; padding: 7px; opacity: .7;
 }
+
+/* ? Section formations*/
+section#formation{background-color: #0F3A5F; padding: 3.5em 0;}
