@@ -264,3 +264,27 @@ progress::-moz-progress-bar { background-color: #0E3555; }
 
 /* ? Section formations*/
 section#formation{background-color: #0F3A5F; padding: 3.5em 0;}
+section#formation h1{
+    text-align: center;
+}
+section#formation h1 + p{
+    text-align: center; color: var(--paragraphColor); margin-bottom: 30px;
+}
+
+.academique{
+    display: grid; 
+}
+
+.dut, .bac{
+    background-color: #0A2540;
+    border: 1px solid #2B5A7D; border-radius: 10px;
+    margin: 15px; padding: 30px;
+}
+
+.header span{
+    margin-left: 20em; color: var(--paragraphColor);
+}
+/* ? Emtete des formations*/
+.header{
+    /* disposition*/
+}
