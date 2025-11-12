@@ -272,7 +272,7 @@ section#formation h1 + p{
 }
 
 .academique{
-    display: grid; 
+    display: grid;
 }
 
 .dut, .bac{
@@ -280,11 +280,12 @@ section#formation h1 + p{
     border: 1px solid #2B5A7D; border-radius: 10px;
     margin: 15px; padding: 30px;
 }
+.date{position: absolute;}
 
 .header span{
     margin-left: 20em; color: var(--paragraphColor);
 }
 /* ? Emtete des formations*/
 .header{
-    /* disposition*/
+    line-height: 10px; margin-bottom: 2em;
 }
