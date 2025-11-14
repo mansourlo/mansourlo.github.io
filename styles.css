@@ -289,3 +289,13 @@ section#formation h1 + p{
 .header{
     line-height: 10px; margin-bottom: 2em;
 }
+
+.certification{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.huawei, .fcc{
+    background-color: #0A2540;
+    border: 1px solid #2B5A7D; border-radius: 10px;
+    margin: 15px; padding: 30px;
+}
