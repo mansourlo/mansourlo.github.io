@@ -272,13 +272,13 @@ section#formation h1 + p{
 }
 
 .academique{
-    display: grid;
+    display: grid; margin-bottom: 2.5em;
 }
 
 .dut, .bac{
     background-color: #0A2540;
     border: 1px solid #2B5A7D; border-radius: 10px;
-    margin: 15px; padding: 30px;
+    margin: 0 15px 10px 15px; padding: 30px;
 }
 .date{position: absolute;}
 
@@ -292,10 +292,11 @@ section#formation h1 + p{
 
 .certification{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); margin-top: 0;
+    
 }
 .huawei, .fcc{
     background-color: #0A2540;
     border: 1px solid #2B5A7D; border-radius: 10px;
-    margin: 15px; padding: 30px;
+    margin: 0 15px 15px 15px; padding: 30px;
 }
