@@ -326,10 +326,10 @@ footer > h1, footer > p{text-align: center;}
     color: #fff;
 }
 
-input:focus, textarea:focus{outline: 1px solid var(--color1);}
+input:focus, textarea:focus{outline: 2px solid var(--color1);}
 
 .formulaire button{background-color: var(--color1); color: #0A2540;border: none; border-radius: 5px;
-    padding: 10px; margin-top: 2em;
+    padding: 10px; margin-top: 2em; cursor: pointer;
 }
 
 .social-media {text-align: center; margin-bottom: 0;}
@@ -339,4 +339,19 @@ hr {
     height: 0.1px;
     background-color: #4DBFFF; opacity: 0.3;
     width: 95%; margin-top: 0;
+}
+
+.CV{
+   text-align: center;
+   background: linear-gradient(135deg, #0A2540, #4DBFFF);
+   margin: 2em; padding: 1.5em 0; border-radius: 15px;
+}
+.CV button{color: var(--color1); border: none; border-radius: 5px;
+    padding:0.5em; font-size: large;cursor: pointer;
+}
+.CV i{color: #4DBFFF;}
+
+.download-Vitae{
+   text-align: center;
+   margin-top: 2em;
 }
