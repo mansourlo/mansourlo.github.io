@@ -347,7 +347,7 @@ hr {
    margin: 2em; padding: 1.5em 0; border-radius: 15px;
 }
 .CV button{color: var(--color1); border: none; border-radius: 5px;
-    padding:0.5em; font-size: large;cursor: pointer;
+    padding:0.5em; font-size: large; cursor: pointer;
 }
 .CV i{color: #4DBFFF;}
 
