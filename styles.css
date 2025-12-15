@@ -64,7 +64,7 @@ header {
     font-weight: 500;
     transition: background 0.3s ease;
     cursor: pointer;
-    margin-right: 1rem;
+    margin-right: 1em;
 }
 
 section{
@@ -94,7 +94,7 @@ section#home p{
 }
 .socials i{
     color: var(--color2);
-    margin: 30px 10px ;
+    margin: 10px;
     font-size: 1em;
 }
 .socials i:hover{
@@ -354,4 +354,23 @@ hr {
 .download-Vitae{
    text-align: center;
    margin-top: 2em;
+}
+
+.nav-bar .fa-bars{margin: 1em; font-size: 1.3em;}
+
+/* ? Responsive Design */
+@media (max-width: 768px) {
+    .nav-bar a{
+        display: none;
+    }
+
+    .self{
+        width: 150px;
+        height:150px;
+    }
+
+    section{
+        width: 100vw;
+        height: 100vh;
+    }
 }
