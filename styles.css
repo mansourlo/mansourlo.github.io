@@ -19,6 +19,7 @@ body{
     font-size:larger;
     letter-spacing: 1px;
     padding-left: 1rem;
+    z-index: 999;
 }
 
 .sante{
@@ -365,18 +366,35 @@ hr {
     cursor: pointer;
 }
 
-/* ? Responsive Design */
-@media (max-width: 768px) {
-    .nav-bar{
+/* ! style a adoptè au clic de l'icone de menu*/
+.menu{
         position: absolute;
-        top: 1em;
+        top: 5em;
         display: flex;
         flex-direction: column;
-        align-items:flex-start;
+        align-items:center;
         gap: 20px;
         background: rgba(10, 37, 64);
         width: 100vw; height: 100vh;
     }
+
+/* ? Responsive Design */
+@media (max-width: 768px) {
+    /* ! le selecteur de classe menu est utilisé par l'appel du script showMenu*/
+    .nav-bar{
+        position: absolute;
+        top: 3.5em;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        gap: 20px;
+        background: rgba(10, 37, 64);
+        width: 100vw; height: 100vh;
+        margin-left: -100%; /* masquer le contenu de nav-bar. ce dernier ne va s'afficher qu'au clic de menu*/
+    }
+
+    .menu{margin-left: 0;} /* ! Défaire ce que {margin-left: -100%;} avait fait */
+
     .fa-bars{
         display: block;
         z-index: 10;
