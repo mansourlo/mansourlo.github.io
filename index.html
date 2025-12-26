@@ -16,17 +16,17 @@
         <h1 class="logo">
             Mansour <span class="sante">LO</span>
         </h1>
-        <nav class="nav-bar">
-            <a href="#home">Accueil</a>
-            <a href="#about">À propos</a>
-            <a href="#project">Projets</a>
-            <a href="#skill">Compétences</a>
-            <a href="#formation">Formations</a>
+        <nav class="nav-bar" id="navig">
+            <a href="#home" onclick="showMenu()">Accueil</a>
+            <a href="#about" onclick="showMenu()">À propos</a>
+            <a href="#project" onclick="showMenu()">Projets</a>
+            <a href="#skill" onclick="showMenu()">Compétences</a>
+            <a href="#formation" onclick="showMenu()">Formations</a>
             <a href="images/myCV.pdf" target="_blank">Mon CV</a>
         </nav>
         
         <!--Icone menu afficher en responsive design-->
-        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        <img src="images/btn-menu.png" alt="menu hamburger" id="btn-menu" onclick="showMenu()">
     </header>
 
     <section id="home">

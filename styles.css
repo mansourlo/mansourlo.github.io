@@ -359,12 +359,13 @@ hr {
    margin-top: 2em;
 }
 
-.fa-bars{
+#btn-menu{
     display: none; 
     margin: 0 1.2em; 
     font-size: 1.3em;
     cursor: pointer;
 }
+#btn-menu:hover{transform: scale(1.1,1.1);}
 
 /* ! style a adoptè au clic de l'icone de menu*/
 .menu{
@@ -376,6 +377,7 @@ hr {
         gap: 20px;
         background: rgba(10, 37, 64);
         width: 100vw; height: 100vh;
+        transition: ease 0.3s;
     }
 
 /* ? Responsive Design */
@@ -384,18 +386,12 @@ hr {
     .nav-bar{
         position: absolute;
         top: 3.5em;
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        gap: 20px;
-        background: rgba(10, 37, 64);
-        width: 100vw; height: 100vh;
-        margin-left: -100%; /* masquer le contenu de nav-bar. ce dernier ne va s'afficher qu'au clic de menu*/
+        margin-left: -150%; /* masquer le contenu de nav-bar. ce dernier ne va s'afficher qu'au clic de menu*/
     }
 
-    .menu{margin-left: 0;} /* ! Défaire ce que {margin-left: -100%;} avait fait */
+    .menu{margin-left: 0;} /* ! Défaire ce que {margin-left: -150%;} avait fait */
 
-    .fa-bars{
+    #btn-menu{
         display: block;
         z-index: 10;
     }
