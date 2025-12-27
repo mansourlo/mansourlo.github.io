@@ -401,8 +401,21 @@ hr {
         height:150px;
     }
 
-    section{
+    section, footer{
         width: 100vw;
-        height: 100vh;
+        height: 100%;
     }
+
+    .infos-persos,.certification{
+        grid-template-columns: 1fr;
+    }
+
+    .project-container, .skill-container, .academique, .grid-contain{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-content: center;
+    }
+    .carte-projet, .skill-card{width: 90vw;}
+    .github-btn{left: 10%; width:auto;}
+    .certifie{width:inherit;}
 }
