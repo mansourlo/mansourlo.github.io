@@ -8,4 +8,10 @@ const showMenu = () => {
     if(menuItems.classList[1] !== "menu"){
         icone.src = "images/btn-menu.png";
     }
+
+    //desactiver showMenu() quand taille d'ecran > 768px 
+    if(window.innerWidth > 768){
+        menuItems.classList.remove("menu");
+        icone.src ="images/btn-menu.png"
+    }
 }
