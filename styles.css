@@ -275,22 +275,22 @@ section#formation h1 + p{
 }
 
 .academique{
-    display: grid; margin-bottom: 2.5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .dut, .bac{
     background-color: #0A2540;
     border: 1px solid #2B5A7D; border-radius: 10px;
-    margin: 0 15px 10px 15px; padding: 30px;
+    margin: 0 15px 10px 15px; padding: 20px;
 }
-.date{position: absolute;}
 
 .header span{
-    margin-left: 20em; color: var(--paragraphColor);
+    color: var(--paragraphColor);
 }
-/* ? Emtete des formations*/
+/* ? Entete des formations*/
 .header{
-    line-height: 10px; margin-bottom: 2em;
+    line-height: 5px; margin-bottom: 2em;
 }
 
 .certification{
@@ -419,6 +419,11 @@ hr {
     .others-container{display: grid; grid-template-columns: repeat(2, 1fr); padding: 15px;}
 
     .carte-projet, .skill-card{width: 90vw;}
+
     .github-btn{left: 10%; width:auto;}
+
     .certifie{width:inherit;}
+
+    /* ? entete des formations academiques (BAC et DUT) */
+    .header{line-height: 20px;}
 }
