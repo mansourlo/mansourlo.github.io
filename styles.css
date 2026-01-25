@@ -95,12 +95,13 @@ section#home p{
     color: var(--paragraphColor);
     font-size: large;
 }
-.socials i{
-    color: var(--color2);
-    margin: 10px;
-    font-size: 1em;
+.socials img{
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 5px;
+    background-color: #FFF; border-radius: 5px;
 }
-.socials i:hover{
+.socials img:hover{
     color: var(--color1);
     transform: scale(1.2, 1.2);
 }
@@ -357,6 +358,13 @@ hr {
 .download-Vitae{
    text-align: center;
    margin-top: 2em;
+}
+
+/* icones du Footer*/
+.socials i{
+    color: var(--color2);
+    margin: 10px;
+    font-size: 1em;
 }
 
 #btn-menu{
