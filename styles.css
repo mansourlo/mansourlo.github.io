@@ -208,10 +208,14 @@ section#project h1 + p{
 }
 .github-btn:hover{
     background-color: var(--color1);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(77, 191, 255, 0.3);
 }
-.github-btn *:hover{
+.github-btn:hover *{
     color: #0A2540;
 }
+
+
 
 /* ? Section Competences*/
 section#skill{
