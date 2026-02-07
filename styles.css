@@ -284,7 +284,11 @@ progress::-moz-progress-bar { background-color: #0E3555; }
 /* !other skills*/
 .others-container{display: flex; justify-content: center; gap: 20px;}
 .others{
-     color: var(--color1); border: 1px solid var(--color1) ;border-radius: 20px; padding: 7px; opacity: .7;
+    color: var(--color1); border: 1px solid var(--color1) ;border-radius: 20px; padding: 7px; opacity: .7;
+}
+.others:hover{
+    color:#0A2540;
+    background-color: #4DBFFF;
 }
 
 /* ? Section formations*/
@@ -358,6 +362,10 @@ footer > h1, footer > p{text-align: center;}
     padding: 0 1.5em 1.5em; margin:0 1em 2em 2em; 
     border: .5px solid var(--color1); border-radius: 5px;
 }
+.formulaire:hover{
+    transform: translateX(8px);
+    transition: all 0.3s ease-out;
+}
 
 .formulaire input, .formulaire textarea{
     background-color: #0A2540; padding: 1em; margin: 0 0.5em 0.5em;
@@ -393,6 +401,10 @@ hr {
     padding:0.5em; font-size: large; cursor: pointer;
 }
 .CV i{color: #4DBFFF;}
+.CV:hover{
+    transform: translateY(-3px);
+    transition: all 0.3s ease-in;
+}
 
 .download-Vitae{
    text-align: center;
