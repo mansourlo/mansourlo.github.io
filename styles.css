@@ -82,8 +82,8 @@ section#home{
 }
 
 .self  {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border: 2px solid var(--color1);
     border-radius: 50%;
     box-shadow:  var(--color1);
@@ -202,6 +202,9 @@ section#project h1 + p{
     transition: all 0.3s ease;
     transform: scale(0.9, 0.9); 
     opacity: 0.8;
+}
+.badge{
+    display: flex;
 }
 .badge span{
     background-color: #0F3A5F; color: var(--color1);
