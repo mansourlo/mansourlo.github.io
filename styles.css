@@ -340,6 +340,11 @@ section#formation h1 + p{
     margin: 0 15px 15px 15px; padding: 30px;
 }
 
+.certificat{
+    text-decoration: none;
+    color: #fff;
+}
+
 .fcc:hover{
     animation: formation 0.4s ease forwards;
 }
