@@ -1,0 +1,108 @@
+/* ===== SECTION COMPÉTENCES ===== */
+
+.langages {
+  padding: 1.3rem;
+}
+
+/* --- Titre --- */
+/*.langages h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 0 1.25rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.langages h2 i {
+  color: #00c9a7;
+  font-size: 1rem;
+}*/
+
+/* --- Grille des cartes --- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+/* --- Carte individuelle --- */
+.skills-grid span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 2rem 1rem;
+
+  background: #FFF;
+  border: none;
+  border-radius: 16px;
+
+  cursor: default;
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.skills-grid span:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* --- Logo --- */
+.skills-grid span img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.skills-grid span:hover img {
+  transform: scale(1.08);
+}
+
+/* --- Nom du langage --- */
+.skills-grid span p {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .skills-grid span {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .skills-grid span img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 0.6rem;
+  }
+
+  .skills-grid span {
+    padding: 1.25rem 0.5rem;
+  }
+
+  .skills-grid span img {
+    width: 40px;
+    height: 40px;
+  }
+}
