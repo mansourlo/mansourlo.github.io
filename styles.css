@@ -312,6 +312,14 @@ section#formation h1 + p{
     color: #fff;
 }
 
+td a{
+    color: #ccc;
+    margin-left: 1.2rem;
+}
+td a:hover{
+    text-decoration: unset;
+}
+
 .fcc:hover{
     animation: formation 0.4s ease forwards;
 }
