@@ -421,14 +421,23 @@ hr {
     .nav-bar{
         position: absolute;
         top: 3.5em;
-        margin-left: -150%; /* masquer le contenu de nav-bar. ce dernier ne va s'afficher qu'au clic de menu*/
+        left: 0;                /* ancrage à gauche */
+        width: 100%; 
+        flex-direction: column;
+        z-index: 99;
+
+        /* État fermé */
+        transform: translateX(-100%);
+        visibility: hidden;
+        transition: transform 0.3s ease, visibility 0.3s ease;
     }
 
-    .menu{margin-left: 0;} /* ! Défaire ce que {margin-left: -150%;} avait fait */
+    /* État ouvert */
+    .menu{transform: translateX(0); visibility: visible;}
 
     #btn-menu{
         display: block;
-        z-index: 10;
+        z-index: 1000;
     }
 
     .self{
@@ -451,9 +460,11 @@ hr {
         justify-content: center;
     }
 
-    .others-container{display: grid; grid-template-columns: repeat(2, 1fr); padding: 15px;}
+    .others-container{display: grid; grid-template-columns: 1fr; grid-template-columns: 1fr; width: fit-content; margin: 0 auto;}
 
-    .carte-projet, .skill-card{width: 90vw;}
+    .carte-projet, .skill-card{width: 90vw; height: fit-content;}
+
+    .badge{display: grid; grid-template-columns: repeat(2, 1fr); width: fit-content; gap: 0.5em;}
 
     .github-btn{left: 10%; width:auto;}
 
